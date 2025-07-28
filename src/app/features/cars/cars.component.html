@@ -1,0 +1,57 @@
+<section>
+  <table>
+    <thead>
+    <tr>
+      <th>
+        <div>
+          Type
+          <input/>
+        </div>
+      </th>
+      <th>
+        <div>
+          Brand
+          <input/>
+        </div>
+      </th>
+      <th>
+        <div>
+          Model
+          <input/>
+        </div>
+      </th>
+      <th>
+        <div>
+          Registration date
+          <input type="date"/>
+        </div>
+      </th>
+      <th>
+        <div>
+          Fuel type
+          <input/>
+        </div>
+      </th>
+      <th>
+        <div>
+          Actions
+        </div>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+      @for (car of cars; track car.id) {
+        <tr>
+          <td>{{ car.carType }}</td>
+          <td>{{ car.brandId | brand: brands }}</td>
+          <td>{{ car.model }}</td>
+          <td>{{ car.registrationDate | date: 'dd/MM/yyyy' }}</td>
+          <td>{{ car.fuelType }}</td>
+          <td>
+            <button>Details</button>
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</section>
