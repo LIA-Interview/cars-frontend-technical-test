@@ -37,7 +37,7 @@ API url: http://37.187.55.36:80
 
 Headers:
 
-- X-API-KEY: wRdZsPz5DFk9kn38J0N0knDtO1c2H9tSQXwTdq3tYqY8M4EJbT
+- X-API-KEY: zQNDMjTc6Eoi6bcmsOXH3BH6Id2Di87zZ9QirDEysL6vHzmsaJ
 
 ### Endpoints:
 
