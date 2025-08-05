@@ -10,20 +10,22 @@ You Have a default application already setup. Please ensure that the application
 2. Currently, the filter are not implemented in the cars table. You will have to implement dynamic filters
 3. Currently, the details button is not working. Once the user click on the button, he should be redirected to a new
    details screen. This screen should display the details of the car.
-4. Create a new menu entry called Brands. This new entry should display a component that display all the brands the way
-   you want
+4. Add a delete button in order to be able to delete a car
+5. Be able to patch the details via reactive form.
 
 Bonus:
 
-1. Use a resolver to retrieve the details used fin the car details screen
-2. Update the Brand component in order to display the brands in multiple small cards. To do so, you will have to create
+1. Create a new menu entry called Brands. This new entry should display a component that display all the brands the way
+   you want
+2. Use a resolver to retrieve the details used fin the car details screen
+3. Update the Brand component in order to display the brands in multiple small cards. To do so, you will have to create
    a reusable Card component that can be used later on as follow:
 
 ```html
 
 <card [title]="...">
-    <img src="..." alt="..."/>
-    <button>See more</button>
+  <img src="..." alt="..."/>
+  <button>See more</button>
 </card>
 ```
 
@@ -33,22 +35,22 @@ Bonus:
 
 ### Information
 
-API url: http://37.187.55.36:80
+API url: http://37.187.55.36:80/api
 
 Headers:
 
-- X-API-KEY: zQNDMjTc6Eoi6bcmsOXH3BH6Id2Di87zZ9QirDEysL6vHzmsaJ
+- X-API-KEY: wRdZsPz5DFk9kn38J0N0knDtO1c2H9tSQXwTdq3tYqY8M4EJbT
 
 ### Endpoints:
 
-GET - /cars: Get a page of all cars
+GET - /api/cars: Get a page of all cars
 
 - params:
-    - carType
-    - brand
-    - model
-    - registrationDate
-    - fuelType
+  - carType
+  - brand
+  - model
+  - registrationDate
+  - fuelType
 
 GET - /cars/{id}: get car details
 
