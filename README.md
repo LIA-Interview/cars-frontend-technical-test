@@ -47,7 +47,7 @@ GET - /api/cars: Get a page of all cars
 
 - params:
   - carType
-  - brand
+  - brand (should be the id of the brand to filter on)
   - model
   - registrationDate
   - fuelType
